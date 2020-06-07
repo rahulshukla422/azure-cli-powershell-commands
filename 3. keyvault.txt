@@ -40,4 +40,6 @@ Powershell
 # delete secret 
  Remove-AzKeyvaultSecret -VaultName akvdemo14 -Name sqlcred -Force
 
+# delete keyvault
+ remove-azkeyvault -VaultName akvdemo14 -Force
 
