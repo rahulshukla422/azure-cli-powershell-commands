@@ -1,7 +1,15 @@
+Cli
+-----
+# create new keyvault
+ az keyvault create --name akvdemo111 --resource-group rgdemo --location eastus --enabled-for-disk-encryption true
 
+# create new vm (if not exist)
+ az vm create --name vmdemo111 --resource-group rgdemo --image win2016datacenter --location eastus --admin-username rahulshukla422 --admin-password yourpassword 
 
+# enable disk encryption
+ az vm encryption enable --name vmdemo111 --resource-group rg demo --disk-encryption-keyvault akvdemo111
 
-
+***************************************************************************************************
 
 Powershell
 ----------
